@@ -8,6 +8,7 @@ public class SuccessKilled {
     private short state;
     private Date createTime;
 
+    //多对一
     private SecKill secKill;
 
     public SecKill getSecKill() {
