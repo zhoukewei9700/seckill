@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede35084-3601-4983-b77c-af33528a6b8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/seckill/DAO/SuccessKilledDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SeckillDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/seckill/DAO/SeckillDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/seckill/DAO/SuccessKilledDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/seckill/entity/SuccessKilled.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/seckill/entity/SuccessKilled.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/seckill/DAO/SeckillDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/seckill/DAO/SeckillDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/seckill/DAO/SuccessKilledDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/seckill/DAO/SuccessKilledDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SeckillDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SeckillDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SuccessKilledDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +31,8 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit3 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -45,7 +51,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -62,10 +68,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "spring.configuration.checksum": "f28a3e17a43fa30ba2987ec06a48d265"
   },
   "keyToStringList": {
@@ -75,6 +84,105 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.seckill.DAO" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SuccessKilledDaoTest.insertSuccessKilled">
+    <configuration name="SeckillDaoTest.queryAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SecKill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.DAO" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.DAO.SeckillDaoTest" />
+      <option name="METHOD_NAME" value="queryAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillDaoTest.queryById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SecKill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.DAO" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.DAO.SeckillDaoTest" />
+      <option name="METHOD_NAME" value="queryById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeckillDaoTest.reduceNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SecKill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.DAO" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.DAO.SeckillDaoTest" />
+      <option name="METHOD_NAME" value="reduceNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessKilledDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SecKill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.DAO" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.DAO.SuccessKilledDaoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SuccessKilledDaoTest.insertSuccessKilled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SecKill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.seckill.DAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.seckill.DAO" />
+      <option name="MAIN_CLASS_NAME" value="org.seckill.DAO.SuccessKilledDaoTest" />
+      <option name="METHOD_NAME" value="insertSuccessKilled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SuccessKilledDaoTest.insertSuccessKilled" />
+        <item itemvalue="JUnit.SuccessKilledDaoTest" />
+        <item itemvalue="JUnit.SeckillDaoTest.reduceNumber" />
+        <item itemvalue="JUnit.SeckillDaoTest.queryAll" />
+        <item itemvalue="JUnit.SeckillDaoTest.queryById" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +193,7 @@
       <updated>1679300499549</updated>
       <workItem from="1679300500834" duration="4941000" />
       <workItem from="1679370109197" duration="3301000" />
-      <workItem from="1679386185240" duration="2214000" />
+      <workItem from="1679386185240" duration="15510000" />
     </task>
     <servers />
   </component>

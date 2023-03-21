@@ -1,5 +1,6 @@
 package org.seckill.DAO;
 
+import org.apache.ibatis.annotations.Param;
 import org.seckill.entity.SecKill;
 
 import java.util.Date;
@@ -13,7 +14,7 @@ public interface SeckillDao {
      * @param killTime
      * @return 如果影像行数为>1，表示更新的记录行数
      */
-    int reduceNumber(long seckillId, Date killTime);
+    int reduceNumber(@Param("seckillId") long seckillId, @Param("killTime") Date killTime);
 
     /**
      *根据id查询秒杀对象
@@ -28,7 +29,7 @@ public interface SeckillDao {
      * @param limit
      * @return
      */
-    List<SecKill> queryAll(int offset, int limit);
+    List<SecKill> queryAll(@Param("offset") int offset, @Param("limit") int limit);
 
 
 }
